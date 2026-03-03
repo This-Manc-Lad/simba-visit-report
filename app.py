@@ -55,7 +55,7 @@ import os
 
 # --- HEADER (NEW: Professional Logo Integration) ---
 # Load the logo with error handling
-logo_path = './assets/simba_logo.png'
+logo_path = 'simba-logo.png'
 
 if os.path.exists(logo_path):
     logo = Image.open(logo_path)
