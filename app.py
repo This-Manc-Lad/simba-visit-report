@@ -25,7 +25,7 @@ st.markdown("""
 
 # --- HEADER (NEW: Professional Logo Integration) ---
 # Load the logo (ensure it is in the same folder as your app.py)
-logo = Image.open('simba_logo.png')
+logo = Image.open('./assets/simba_logo.png')  # if logo is in an 'assets' folder
 st.image(logo, width=150, use_column_width=False)
 st.markdown("<h1 style='text-align: center; color: black; padding-bottom: 20px;'>WHOLESALE PARTNER VISIT REPORT</h1>", unsafe_allow_html=True)
 st.markdown("---")
