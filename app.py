@@ -50,3 +50,17 @@ if visit_photo is not None:
 st.markdown("---")
 if st.button("SUBMIT REPORT"):
     st.success("Report submitted successfully!")
+    from PIL import Image
+import os
+
+# --- HEADER (NEW: Professional Logo Integration) ---
+# Load the logo with error handling
+logo_path = './assets/simba_logo.png'
+
+if os.path.exists(logo_path):
+    logo = Image.open(logo_path)
+    st.image(logo, width=150, use_column_width=False)
+else:
+    st.warning("⚠️ Logo file not found. Please ensure 'assets/simba_logo.png' exists.")
+
+st.markdown("<h1 style='text-align: center; color: black; padding-bottom: 20px;'>WHOLESALE PARTNER VISIT REPORT</h1>", unsafe_allow_html=True)
